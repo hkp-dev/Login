@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Enable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .QR-container {
+      margin: 0 auto; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #fff;
+      width: 400px;
+      background: linear-gradient(to right, #f2f2f2, #f2f2f2, grey);
+      border: none;
+    }
+
+        .QR-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="QR-container">
+        <h1>2FA Enable</h1>
+        <p>Scan the QR code by Google Authenticator</p>
+        <img src="qrcodes/39777.png" alt="QR Code">
+        <label>Enter the code:</label>
+        <input type="text" name="code" placeholder="Enter the code">
+        <button type="submit">Submit</button>
+    </div>
+</body>
+
+</html>
